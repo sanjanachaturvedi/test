@@ -1,10 +1,25 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml version="1.0" encoding="UTF-8"?>
 <project name="EB" default="build" basedir=".">
 <property environment="env"/>
 <property name="btime" value="${BUILD_TIMESTAMP}"/>
 <target name="zip" description="zip files using ant">
     <zip destfile="${env.BUILD_TIMESTAMP}.zip"  basedir="${basedir}"/>
 </target> 
+</project>
+-->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="EB" default="build" basedir=".">
+
+<property environment="env"/>
+<property name="label" value="${env.BUILD_ID}"/>
+
+<target name="zip" description="zip files using ant">
+    <zip destfile="${env.BUILD_ID}.zip" basedir="${basedir}"/>
+</target> 
+
 </project>
 
 
