@@ -2,6 +2,4 @@
 <project name="EB" default="build" basedir=".">
 <property environment="env"/>
 <property name="btime" value="${BUILD_TIMESTAMP}"/>
-<target name="zip" description="zip files using ant"/>
- 
 </project>
