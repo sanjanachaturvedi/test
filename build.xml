@@ -1,9 +1,9 @@
-ï»¿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project name="EB" default="build" basedir=".">
 
 <property environment="env"/>
 <property name="btime" value="${BUILD_TIMESTAMP}"/>
 <target name="zip" description="zip files using ant">
-Â Â Â  <zip destfile="${env.BUILD_ID}.zip" basedir="${basedir}"/>
+    <zip destfile="${env.BUILD_TIMESTAMP}.zip"    basedir="${basedir}"/>
 </target> 
 </project>
