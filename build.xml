@@ -3,7 +3,7 @@
 <property environment="env"/>
 <property name="btime" value="${BUILD_TIMESTAMP}"/>
 <target name="zip" description="zip files using ant">
-    <zip destfile="${env.BUILD_TIMESTAMP}.zip"  basedir="${basedir}"/>
+    <zip destfile="${btime.BUILD_TIMESTAMP}.zip"  basedir="${basedir}"/>
 </target> 
 </project>
 
